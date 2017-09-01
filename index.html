@@ -1,17 +1,38 @@
-<!doctype html>
-
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
+ 
   <meta charset="utf-8">
-
-  <title>Justins Cash register</title>
-
-<!-- 
-  <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <title>Justins Cash Register</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="behavior.js"></script>
 
 </head>
 
 <body>
-  <script src="js/calculator.js"></script>
+
+  <h1> Justins Project Cash Register </h1>
+
+  <div id="register">
+    <section id="ticket">
+      <h1>Inputs</h1>
+      <table>
+        <tbody id="entries">
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Total</th>
+            <th id="total">$0.00</th>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <form id="entryForm">
+      <input id="newEntry" autofocus placeholder="kimchi?">
+    </form>
+  </div>
 </body>
 </html>
