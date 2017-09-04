@@ -16,6 +16,7 @@
 <body>
 
 <!-- Top part of Cash Register -->
+  
   <h1> Justins Project Cash Register </h1>
 
   <div id="register">
@@ -27,13 +28,13 @@
         <tfoot>
           <tr>
             <th>Total</th>
-            <th id="total">$0.00</th>
+            <td id="total">$0.00</td>
           </tr>
         </tfoot>
       </table>
     </section>
    
-
+<!-- data displayed here -->
     <form id="entryForm">
       <input id="newEntry" autofocus placeholder="kimchi?">
     </form>
@@ -43,10 +44,10 @@
 <!-- Bottom part of cash register  / keyboard(pad) -->
 
   <div class="inputField">
-  		<div class=" numbers"><
-  	   <table class="calculatorFramework", cellspacing="40">
+  		<div class="numbers"><
+  	   <table class="calculatorFrame", cellspacing="40">
             
-                 <!-- Number Keys -->
+            <!-- Number Keys  and Operators-->
 
           <tr>
             <td class="keys" data-number="1">1</td>
@@ -75,14 +76,20 @@
             <td class="keys" data-number=".">.</td>
             <td class="keys" data-number="-"> - </td>
           </tr>
+
+           <tr>
+            <td class="keys" data-string="clear">clear</td>
+            <td class="keys" data-string="get balance">get balance</td>
+            <td class="keys" data-string="deposit cash">deposit cash</td>
+            <td class="keys" data-string="withdraw cash">withdraw cash</td>
+          </tr>
     
        </table>
 
   	 </div>
-
 	  </div>  
 
   </div>
-
+    <!-- include js calculator & js cashregister -->
   </body>
 </html>

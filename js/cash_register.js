@@ -3,12 +3,25 @@
 // main points 
 
 // 1. ( display ) is the primary ui that prints all results
+	
+	var UiDisplay = document.getElementById("total");
+	document.getElementById("total").onClick = 0;
 
 // 2. [clear] will clear the display
 
+function clear(str){
+	var total = 0;
+
+}
+
+
 // 3. [get balance] will display the current balance
 
+
+
 // 4. [deposit cash] will add the amount currently in the ( display ) to the cash register, then clears the display
+
+
 
 // 5. [withdraw cash] will remove the amount currently in the ( display ) to the cash register, then clears the display
 
