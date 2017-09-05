@@ -1,4 +1,4 @@
-console.log('i am here');
+console.log('calculator linked');
 
   var calculatorModule = (function(){
 
@@ -18,8 +18,6 @@ console.log('i am here');
     clearMemory:clearMemory,
     
 };
- 
- 
   /**
    * Validation
    */
@@ -44,8 +42,6 @@ console.log('i am here');
       return total;
    }
 
-
-
   /**
    * Return the value of `total`
    * @return { Number }
@@ -54,7 +50,6 @@ console.log('i am here');
    function getTotal(){
     return total;
    }
-
 
   /**
    * Sums the value passed in with `total`
