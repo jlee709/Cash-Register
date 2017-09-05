@@ -1,3 +1,4 @@
+console.log('cash register linked');
 // logic of the cash register
 
 // main points 
@@ -6,10 +7,10 @@
 
 // function bttons
 var display = document.getElementById('newEntry');
-var clearButton = document.getElementByClassName('fkeyClr');
-var balanceButton = document.getElementByClassName('fkeyBal');
-var depositButton = document.getElementByClassName('fkeyDep');
-var withdrawButton = document.getElementByClassName('fkeyWith');
+var clearButton = document.getElementsByClassName('fkeyClr');
+var balanceButton = document.getElementsByClassName('fkeyBal');
+var depositButton = document.getElementsByClassName('fkeyDep');
+var withdrawButton = document.getElementsByClassName('fkeyWith');
 
 // Keys
 
@@ -21,6 +22,7 @@ var withdrawButton = document.getElementByClassName('fkeyWith');
 // 2. [clear] will clear the display
 
  clearButton.onClick = function(){
+	clearButton.style.display = "none";
 	display = 0;
 	return display;
 };
