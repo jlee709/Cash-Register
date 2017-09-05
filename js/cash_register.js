@@ -4,13 +4,14 @@
 
 //vars
 
+// function bttons
 var display = document.getElementById('newEntry');
 var clearButton = document.getElementByClassName('fkeyClr');
 var balanceButton = document.getElementByClassName('fkeyBal');
 var depositButton = document.getElementByClassName('fkeyDep');
 var withdrawButton = document.getElementByClassName('fkeyWith');
 
-// make buttons/keys clickable
+// Keys
 
 
 
@@ -29,14 +30,12 @@ var withdrawButton = document.getElementByClassName('fkeyWith');
 
 
 
-// 4. [deposit cash] will add the amount currently in the ( display ) to the cash register, then clears the display
+// 4. [deposit cash] will add the amount currently in the ( display ) to the cash register, then clear the display
 
 
 
 // 5. [withdraw cash] will remove the amount currently in the ( display ) to the cash register, then clears the display
 
-
-// First set up design layout
 
 
 
