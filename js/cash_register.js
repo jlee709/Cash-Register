@@ -19,6 +19,7 @@ var depositButton = document.getElementsByClassName('fkeyDep');
 var withdrawButton = document.getElementsByClassName('fkeyWith');
 
 
+// how load should work:
 /*
 	100 * 20 = 2000
 
@@ -26,7 +27,8 @@ var withdrawButton = document.getElementsByClassName('fkeyWith');
 	1, 0, 0 > load(100)
 	* 
 	2, 0
-	
+	=
+	2,0,0,0
 
 	- Initially empty buffer
 	- Any number press is added to the buffer
