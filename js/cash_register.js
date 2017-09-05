@@ -1,5 +1,6 @@
 console.log('cash register linked');
-
+			
+			//$$checks
 // $$ Check to see that onClick value is taken and can be passed into
 // $$ the input field for the operations !!! make cash register work
 // $$ with basic integers first then refactor for floats
@@ -9,7 +10,7 @@ console.log('cash register linked');
 
 // logic of the cash register
 
-// function bttons global vars
+// function buttons global vars
 
 var display = document.getElementById('newEntry');
 var clearButton = document.getElementsByClassName('fkeyClr');
@@ -40,21 +41,25 @@ var withdrawButton = document.getElementsByClassName('fkeyWith');
 
 var calculator = new calculatorModule();
 
-// Keys
+// Keys linking logic
 var keys = document.querySelectorAll('.keys');
+
+// buffer stores logic for load function in calculator
 
 var buffer = '';
 var op = '';
 
+// makes the display the buffer
 var updateDisplay = function(){
 	display.value = buffer;
 };
-
+// adds to buffer
 var addToBuffer = function(val){
 	buffer += val;
 	updateDisplay();
 };
 
+// changing between button choices of num and math operator
 var buttonClick = function(e) {
 	switch(this.getAttribute('data-type')){
 		case 'number':
@@ -91,13 +96,6 @@ depositButton.onClick = function(){};
 // 5. [withdraw cash] will remove the amount currently in the ( display ) to the cash register, then clears the display
 
 withdrawButton.onClick = function(){};
-
-
-// have acsess to data in the html files via the dom
-
-// use the DOM to get acsess to each key 
-
-//apply the calculator function from cal file to the cash register logic
 
 
 
