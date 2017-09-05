@@ -4,15 +4,15 @@
 
 // 1. ( display ) is the primary ui that prints all results
 	
-	var UiDisplay = document.getElementById("total");
-	document.getElementById("total").onClick = 0;
+	var display = document.getElementById('newEntry');
+
 
 // 2. [clear] will clear the display
-
-function clear(str){
-	var total = 0;
-
+function clearDisplay(){
+	display = 0;
+	return display;
 }
+
 
 
 // 3. [get balance] will display the current balance

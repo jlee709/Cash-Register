@@ -9,7 +9,9 @@
   
   <link rel="stylesheet" href="style.css">
   
-
+  <!-- scripts -->
+  <script type="calculator.js"></script>
+  <script type="cash_register.js"></script>
 
 <!--   <script src="behavior.js"></script> -->
 
@@ -35,6 +37,7 @@
     </section>
    
 <!-- data displayed here -->
+
     <form id="entryForm">
       <input id="newEntry" autofocus placeholder="kimchi?">
     </form>
@@ -44,8 +47,8 @@
 <!-- Bottom part of cash register  / keyboard(pad) -->
 
   <div class="inputField">
-  		<div class="numbers"><
-  	   <table class="calculatorFrame", cellspacing="40">
+  		<div class="numbers">
+  	   <table class="calculatorFrame", cellspacing="35">
             
             <!-- Number Keys  and Operators-->
 
@@ -79,17 +82,20 @@
 
            <tr>
             <td class="keys" data-string="clear">clear</td>
-            <td class="keys" data-string="get balance">get balance</td>
-            <td class="keys" data-string="deposit cash">deposit cash</td>
-            <td class="keys" data-string="withdraw cash">withdraw cash</td>
+            <td class="keys" data-string="get balance">balance</td>
+            <td class="keys" data-string="deposit cash">deposit</td>
+            <td class="keys" data-string="withdraw cash">withdraw</td>
           </tr>
     
-       </table>
+       </table>d
 
   	 </div>
 	  </div>  
 
   </div>
     <!-- include js calculator & js cashregister -->
+    calculator.js()
+    cash_register.js()
+
   </body>
 </html>
