@@ -28,15 +28,14 @@ var withdrawButton = document.getElementByClassName('fkeyWith');
 
 // 3. [get balance] will display the current balance
 
-
+balanceButton.onClick = function(){};
 
 // 4. [deposit cash] will add the amount currently in the ( display ) to the cash register, then clear the display
-
-
+depositButton.onClick = function(){};
 
 // 5. [withdraw cash] will remove the amount currently in the ( display ) to the cash register, then clears the display
 
-
+withdrawButton.onClick = function(){};
 
 
 // have acsess to data in the html files via the dom
