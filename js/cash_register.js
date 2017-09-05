@@ -2,17 +2,27 @@
 
 // main points 
 
+//vars
+
+var display = document.getElementById('newEntry');
+var clearButton = document.getElementByClassName('fkeyClr');
+var balanceButton = document.getElementByClassName('fkeyBal');
+var depositButton = document.getElementByClassName('fkeyDep');
+var withdrawButton = document.getElementByClassName('fkeyWith');
+
+// make buttons/keys clickable
+
+
+
 // 1. ( display ) is the primary ui that prints all results
 	
-	var display = document.getElementById('newEntry');
-
 
 // 2. [clear] will clear the display
-function clearDisplay(){
+
+ clearButton.onClick = function(){
 	display = 0;
 	return display;
-}
-
+};
 
 
 // 3. [get balance] will display the current balance

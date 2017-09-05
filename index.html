@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
- 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-  <title>Justins Cash Register</title>
   
-  <link rel="stylesheet" href="style.css">
+  <head>
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>Justins Cash Register</title>
   
-  <!-- scripts -->
-  <script type="calculator.js"></script>
-  <script type="cash_register.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/style.css">
 
-<!--   <script src="behavior.js"></script> -->
+      <script type="calculator.js"></script>
+      <script type="cash_register.js"></script>
+ </head>
 
-<body>
+
 
 <!-- Top part of Cash Register -->
+ <body> 
   
   <h1> Justins Project Cash Register </h1>
 
+<br><br>
+
   <div id="register">
-    <section id="ticket">
-      <h1>Inputs</h1>
-      <table>
-        <tbody id="entries">
-        </tbody>
-        <tfoot>
-          <tr>
-            <th>Total</th>
-            <td id="total">$0.00</td>
-          </tr>
-        </tfoot>
-      </table>
-    </section>
-   
+     <section id="ticket">
+       
+       <table>
+         <tbody id="entries">
+         </tbody>
+         <tfoot>
+           <tr>
+             <th>Total</th>
+             <td id="total">$0.00</td>
+           </tr>
+         </tfoot>
+       </table>
+     </section>
+     
 <!-- data displayed here -->
 
     <form id="entryForm">
@@ -80,6 +82,7 @@
             <td class="keys" data-number="-"> - </td>
           </tr>
 
+                <!-- function buttons -->
            <tr>
             <td class="keys" data-string="clear">clear</td>
             <td class="keys" data-string="get balance">balance</td>
@@ -87,15 +90,14 @@
             <td class="keys" data-string="withdraw cash">withdraw</td>
           </tr>
     
-       </table>d
+       </table>
 
   	 </div>
 	  </div>  
 
   </div>
     <!-- include js calculator & js cashregister -->
-    calculator.js()
-    cash_register.js()
+
 
   </body>
 </html>
