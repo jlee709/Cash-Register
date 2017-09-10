@@ -62,6 +62,7 @@ var addToBuffer = function(val){
 };
 
 // changing between button choices of num and math operator
+
 var buttonClick = function(e) {
 	switch(this.getAttribute('data-type')){
 		case 'number':
@@ -69,18 +70,29 @@ var buttonClick = function(e) {
 		break;
 		case 'op':
 			op = this.getAttribute('data-value');
-			calculator.load(parseInt(buffer));
+			calculator.load(parseFloat(buffer));
 			buffer = '';
 			updateDisplay();
 		break;
+		// button func not made yet!
+		case 'equate':
+			addToBuffer(this.getAttribute(data-value));
+			break;
 	}
 };
 
+
 // make clickable
+
+
 keys.forEach(function(key){
 	key.addEventListener('click', buttonClick);
 });
 
+
+equateButton.onClick = function(){
+
+};
 
 // 1. ( display ) is the primary ui that prints all results
 	

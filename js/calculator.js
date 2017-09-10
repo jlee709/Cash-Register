@@ -33,6 +33,7 @@ console.log('calculator linked');
    * @param  { Number } x
    * @return { Number }    current total
    */
+   
    function load(x){
     
     validate(x);
@@ -60,7 +61,6 @@ console.log('calculator linked');
 
     return total += x;
    }
-
 
   /**
    * Subtracts the value passed in from `total`
