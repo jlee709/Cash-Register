@@ -17,7 +17,7 @@ var clearButton = document.getElementsByClassName('fkeyClr');
 var balanceButton = document.getElementsByClassName('fkeyBal');
 var depositButton = document.getElementsByClassName('fkeyDep');
 var withdrawButton = document.getElementsByClassName('fkeyWith');
-
+var equate = document.getElementsByClassName('fkeyEquate');
 
 // how load should work:
 /*
@@ -68,6 +68,7 @@ var buttonClick = function(e) {
 		case 'number':
 			addToBuffer(this.getAttribute('data-value'));
 		break;
+		
 		case 'op':
 			op = this.getAttribute('data-value');
 			calculator.load(parseFloat(buffer));
@@ -76,7 +77,9 @@ var buttonClick = function(e) {
 		break;
 		// button func not made yet!
 		case 'equate':
-			addToBuffer(this.getAttribute(data-value));
+			addToBuffer(this.getAttribute('data-value'));
+			calculator.getTotal(parseFloat(buffer));
+			updateDisplay();
 			break;
 	}
 };
@@ -89,10 +92,11 @@ keys.forEach(function(key){
 	key.addEventListener('click', buttonClick);
 });
 
-
-equateButton.onClick = function(){
+//equate button
+equate.onClick = function(){
 
 };
+
 
 // 1. ( display ) is the primary ui that prints all results
 	

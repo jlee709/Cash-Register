@@ -11,8 +11,26 @@ body {
 	padding:50em;
 }
  
+ /*nums and ops*/
 .keys{
 	border: groove;
 	
 }
 
+/*func keys*/
+.fkeyEquate{
+	border: groove;
+}
+
+.fkeyWith{
+	border: groove;
+}
+.fkeyDep{
+	border: groove;
+}
+.fkeyBal{
+	border: groove;
+}
+.fkeyClr{
+	border: groove;
+}
