@@ -10,6 +10,13 @@ console.log('cash register linked');
 
 // logic of the cash register
 
+//	Operator buttons 
+
+var addButton = document.getElementById('add');
+var subtractButton = document.getElementById('subtract');
+var multiplyButton = document.getElementById('multiply');
+var divideButton = document.getElementById('divide');
+
 // function buttons global vars
 
 var display = document.getElementById('newEntry');
@@ -17,8 +24,15 @@ var clearButton = document.getElementsByClassName('fkeyClr');
 var balanceButton = document.getElementsByClassName('fkeyBal');
 var depositButton = document.getElementsByClassName('fkeyDep');
 var withdrawButton = document.getElementsByClassName('fkeyWith');
-var equate = document.getElementsByClassName('fkeyEquate');
+var equateButton = document.getElementById('fkeyEquate');
 
+
+
+equateButton.addEventListener('click', buttonClick);
+
+function buttonClick(){
+	console.log('hit');
+};
 // how load should work:
 /*
 	100 * 20 = 2000
@@ -76,25 +90,33 @@ var buttonClick = function(e) {
 			updateDisplay();
 		break;
 		// button func not made yet!
-		case 'equate':
-			addToBuffer(this.getAttribute('data-value'));
-			calculator.getTotal(parseFloat(buffer));
-			updateDisplay();
-			break;
+		// case 'equate':
+		// 	addToBuffer(this.getAttribute('data-value'));
+		// 	calculator.getTotal(parseFloat(buffer));
+		// 	updateDisplay();
+		// 	break;
 	}
 };
 
+// operation buttons
+
 
 // make clickable
-
 
 keys.forEach(function(key){
 	key.addEventListener('click', buttonClick);
 });
 
-//equate button
-equate.onClick = function(){
 
+
+// op buttons 
+
+//equate button
+
+equateButton.onClick = function(){
+	calculator.getTotal(parseFloat(buffer));
+	buffer = ''; 
+	updateDisplay(); 
 };
 
 
@@ -106,7 +128,9 @@ equate.onClick = function(){
 
 // 3. [get balance] will display the current balance
 
-balanceButton.onClick = function(){};
+balanceButton.onClick = function(){
+	console.log("btn hit");
+};
 
 // 4. [deposit cash] will add the amount currently in the ( display ) to the cash register, then clear the display
 depositButton.onClick = function(){};
