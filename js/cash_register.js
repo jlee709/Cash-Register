@@ -28,7 +28,33 @@ var equateButton = document.getElementById('fkeyEquate');
 
 
 
+// switch button click  // may need to move this somewhere else 
+var buttonClick = function(e) {
+	switch(this.getAttribute('data-type')){
+		case 'number':
+			addToBuffer(this.getAttribute('data-value'));
+			calculator.load(parseFloat(buffer));
+			updateDisplay();
+		break;
+		
+		case 'op':
+			op = this.getAttribute('data-value');
+			calculator.load(parseFloat(buffer));
+			buffer = '';
+			updateDisplay();
+		break;
+		// button func not made yet!
+		// case 'equate':
+		// 	addToBuffer(this.getAttribute('data-value'));
+		// 	calculator.getTotal(parseFloat(buffer));
+		// 	updateDisplay();
+		// 	break;
+	}
+};
+
+
 //onClick operator buttons
+
 addButton.addEventListener('click', buttonClick);
 	
 	function buttonClick(){
@@ -62,6 +88,8 @@ equateButton.addEventListener('click', buttonClick);
 function buttonClick(){
 	console.log('hit');
 }
+
+
 
 
 
@@ -111,26 +139,6 @@ var addToBuffer = function(val){
 
 // changing between button choices of num and math operator
 
-var buttonClick = function(e) {
-	switch(this.getAttribute('data-type')){
-		case 'number':
-			addToBuffer(this.getAttribute('data-value'));
-		break;
-		
-		case 'op':
-			op = this.getAttribute('data-value');
-			calculator.load(parseFloat(buffer));
-			buffer = '';
-			updateDisplay();
-		break;
-		// button func not made yet!
-		// case 'equate':
-		// 	addToBuffer(this.getAttribute('data-value'));
-		// 	calculator.getTotal(parseFloat(buffer));
-		// 	updateDisplay();
-		// 	break;
-	}
-};
 
 // operation buttons
 
@@ -154,24 +162,17 @@ equateButton.onClick = function(){
 };
 
 
-// 1. ( display ) is the primary ui that prints all results
-	
 
-// 2. [clear] will clear the display
+// balanceButton.onClick = function(){
+// 	console.log("btn hit");
+// };
 
+// // 4. [deposit cash] will add the amount currently in the ( display ) to the cash register, then clear the display
+// depositButton.onClick = function(){};
 
-// 3. [get balance] will display the current balance
+// // 5. [withdraw cash] will remove the amount currently in the ( display ) to the cash register, then clears the display
 
-balanceButton.onClick = function(){
-	console.log("btn hit");
-};
-
-// 4. [deposit cash] will add the amount currently in the ( display ) to the cash register, then clear the display
-depositButton.onClick = function(){};
-
-// 5. [withdraw cash] will remove the amount currently in the ( display ) to the cash register, then clears the display
-
-withdrawButton.onClick = function(){};
+// withdrawButton.onClick = function(){};
 
 
 

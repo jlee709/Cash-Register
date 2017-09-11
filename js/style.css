@@ -18,6 +18,22 @@ body {
 	
 }
 
-.fKeyEquate{
+#fkeyEquate{
+	border: groove;
+}
+
+#divide{
+	border: groove;
+}
+
+#multiply{
+	border: groove;
+}
+
+#add{
+	border: groove;
+}
+
+#subtract{
 	border: groove;
 }
