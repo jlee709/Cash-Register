@@ -28,11 +28,45 @@ var equateButton = document.getElementById('fkeyEquate');
 
 
 
+//onClick operator buttons
+addButton.addEventListener('click', buttonClick);
+	
+	function buttonClick(){
+		console.log('add');
+}
+
+subtractButton.addEventListener('click', buttonClick);
+	
+	function buttonClick(){
+		console.log('subtract');
+}
+
+multiplyButton.addEventListener('click', buttonClick);
+	
+	function buttonClick(){
+		console.log('multiply');
+}
+
+divideButton.addEventListener('click', buttonClick);
+	
+	function buttonClick(){
+		console.log('divide');
+}
+
+
+
+//function buttons 
+
 equateButton.addEventListener('click', buttonClick);
 
 function buttonClick(){
 	console.log('hit');
-};
+}
+
+
+
+
+
 // how load should work:
 /*
 	100 * 20 = 2000
